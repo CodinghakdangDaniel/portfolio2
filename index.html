@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- html padding
+    <div style="padding: 0px 200px 0px 200px;"> -->
+    
+    <!-- desktop-nav -->
+    <nav id="desktop-nav">
+        <div class="logo">Daniel Jo</div>
+            <div>  
+                <ul class="nav-links">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><div class="nav-bar">
+                        <div class="dropdown">
+                        <button class="dropbtn"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/000000/like--v1.png" 
+                            onmouseover="this.src='https://img.icons8.com/fluency/48/like.png';" onmouseout="this.src='https://img.icons8.com/fluency-systems-regular/48/000000/like--v1.png';"/>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Who Am I</a>
+                            <a href="#">My Hobby</a>
+                            <a href="#">My Work</a>
+                            <a href="#">My School</a>
+                        </div>
+                        </div>
+                    </div>
+                        </li>
+                    <li><a href="https://instagram.com/danieljo_portfolio?igshid=MzRlODBiNWFlZA=="><img width="48" height="48" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/external-send-essentials-tanah-basah-basic-outline-tanah-basah.png" alt="external-send-essentials-tanah-basah-basic-outline-tanah-basah"/></a></li>
+                </ul>
+            </div>
+    </nav>
+    <!-- End of desktop-nav -->
+
+    <!-- hamburger-nav -->
+    <nav id="hamburger-nav">
+        <div class="logo">Daniel Jo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- End of hamburger-nav -->
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="img/profile-pic.png" alt="Daniel Jo profile picture"/>
+        </div>
+        <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</P>
+        <h1 class="title">Daniel Jo</h1>
+        <p class="section_text_p2">Web Developer</p>
+    
+        <div id="socials-container">
+         <img src="img/github.png" alt="My github profile" class="icon"
+         onclick="location.href='https://github.com/CodinghakdangDaniel/'">
+        
+         <img src="img/instagram.png" alt="My instagram profile" class="icon"
+         onclick="location.href='https://instagram.com/danieljo_portfolio?igshid=MzRlODBiNWFlZA==/'">
+        </div>
+        </div>
+        <img
+        src="img/arrow.png"
+        alt="Arrow icon"
+        class="icon_arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="tools-container">         
+            <img src="img/html.png" alt="HTML 5" class="highlight">
+            <img src="img/css.png" alt="CSS" class="highlight">
+            <img src="img/java-modified.png" alt="JAVA SCRIPT" class="highlight">
+        </div>
+        <div class="text-container"
+            <p class="experience_text">HTML</p>
+            <p class="experience_text">CSS</p>
+            <p class="experience_text">Java Script</p>
+        </div> 
+        <img src="img/arrow.png" alt="Arrow icon" class="icon_arrow"
+        onclick="location.href='./#projects'">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src=
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src=
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src=
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+          />
+        
+        <img src="img/arrow.png" alt="Arrow icon" class="icon_arrow"
+        onclikc="location.href='./#contact'">   
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="img/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="img/instagram.png"
+              alt="instagram icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://instagram.com/danieljo_portfolio?igshid=MzRlODBiNWFlZA==/">
+                Instagram</a></p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
